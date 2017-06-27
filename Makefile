@@ -7,7 +7,7 @@ bin/proga.exe: build/Mainai.o build/korni2.o
 	gcc $(CFLAGS) build/Mainai.o build/korni2.o -o bin/proga.exe -lm
 
 build/main.o: src/Mainai.c src/korni2.h
-	gcc $(CFLAGS) -c src/Mainai.c -o build/Mainai.o -lm
+	gcc $(CFLAGS) -c src/main.c -o build/Mainai.o -lm
 
 build/korni2.o: src/korni2.c src/korni2.h 
 	gcc $(CFLAGS) -c src/korni2.c -o build/korni2.o -lm
