@@ -1,7 +1,7 @@
 #include <ctest.h>
 #include <../src/function.h>
 
-CTEST(Test_1_proverka, input_1)
+CTEST(Test_1_checking, input_1)
 {
     int result = checking(1);
 	
@@ -10,7 +10,7 @@ CTEST(Test_1_proverka, input_1)
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(Test_2_proverka, input_m_1)
+CTEST(Test_2_checking, input_m_1)
 {
     int result = checking(-1);
 	
@@ -19,7 +19,7 @@ CTEST(Test_2_proverka, input_m_1)
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(Test_3_proverka, input_0)
+CTEST(Test_3_checking, input_0)
 {
     int result = checking(0);
 	
