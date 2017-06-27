@@ -1,10 +1,10 @@
 .PHONY: clean all test 
 CFLAGS = -Wall -Werror -MP -MMD 
 
-all: bin/proga.exe 
+all: bin/Proga.exe 
 
 bin/proga.exe: build/Mainai.o build/korni2.o 
-	gcc $(CFLAGS) build/Mainai.o build/korni2.o -o bin/proga.exe -lm
+	gcc $(CFLAGS) build/Mainai.o build/korni2.o -o bin/Proga.exe -lm
 
 build/main.o: src/Mainai.c src/korni2.h
 	gcc $(CFLAGS) -c src/main.c -o build/Mainai.o -lm
@@ -17,7 +17,7 @@ clean:
 	@rm -rf build/*.d build/*.o 
 	@rm -rf build/test/*.d build/test/*.o
 	@echo "Cleaning binaries"
-	@rm -rf bin/proga.exe 
+	@rm -rf bin/Proga.exe 
 	@echo "All files have been cleaned."	
 
 -include build/*.d
