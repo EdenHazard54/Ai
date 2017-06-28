@@ -15,7 +15,6 @@ build/korni2.o: src/korni2.c src/korni2.h
 clean:
 	@echo "Cleaning files in build directory" 	
 	@rm -rf build/*.d build/*.o 
-	@rm -rf build/test/*.d build/test/*.o
 	@echo "Cleaning binaries"
 	@rm -rf bin/Proga.exe 
 	@echo "All files have been cleaned."	
