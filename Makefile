@@ -3,7 +3,7 @@ CFLAGS = -Wall -Werror -MP -MMD
 
 all: bin/Proga.exe 
 
-bin/proga.exe: build/Mainai.o build/korni2.o 
+bin/Proga.exe: build/Mainai.o build/korni2.o 
 	gcc $(CFLAGS) build/Mainai.o build/korni2.o -o bin/Proga.exe -lm
 
 build/main.o: src/Mainai.c src/korni2.h
